@@ -247,34 +247,26 @@ github.com/hashicorp/go-uuid
 # github.com/inconshreveable/mousetrap v1.0.0
 ## explicit
 github.com/inconshreveable/mousetrap
-# github.com/jackc/chunkreader/v2 v2.0.1
-## explicit; go 1.12
-github.com/jackc/chunkreader/v2
-# github.com/jackc/pgconn v1.13.0
-## explicit; go 1.12
-github.com/jackc/pgconn
-github.com/jackc/pgconn/internal/ctxwatch
-github.com/jackc/pgconn/stmtcache
-# github.com/jackc/pgio v1.0.0
-## explicit; go 1.12
-github.com/jackc/pgio
 # github.com/jackc/pgpassfile v1.0.0
 ## explicit; go 1.12
 github.com/jackc/pgpassfile
-# github.com/jackc/pgproto3/v2 v2.3.1
-## explicit; go 1.12
-github.com/jackc/pgproto3/v2
-# github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b
+# github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a
 ## explicit; go 1.14
 github.com/jackc/pgservicefile
-# github.com/jackc/pgtype v1.12.0
-## explicit; go 1.13
-github.com/jackc/pgtype
-# github.com/jackc/pgx/v4 v4.17.2
-## explicit; go 1.13
-github.com/jackc/pgx/v4
-github.com/jackc/pgx/v4/internal/sanitize
-github.com/jackc/pgx/v4/stdlib
+# github.com/jackc/pgx/v5 v5.3.0
+## explicit; go 1.19
+github.com/jackc/pgx/v5
+github.com/jackc/pgx/v5/internal/anynil
+github.com/jackc/pgx/v5/internal/iobufpool
+github.com/jackc/pgx/v5/internal/nbconn
+github.com/jackc/pgx/v5/internal/pgio
+github.com/jackc/pgx/v5/internal/sanitize
+github.com/jackc/pgx/v5/internal/stmtcache
+github.com/jackc/pgx/v5/pgconn
+github.com/jackc/pgx/v5/pgconn/internal/ctxwatch
+github.com/jackc/pgx/v5/pgproto3
+github.com/jackc/pgx/v5/pgtype
+github.com/jackc/pgx/v5/stdlib
 # github.com/jcmturner/gofork v1.0.0
 ## explicit
 github.com/jcmturner/gofork/encoding/asn1
@@ -339,8 +331,6 @@ github.com/miekg/dns
 # github.com/moloch--/memmod v0.0.0-20211120144554-8b37cc654945
 ## explicit; go 1.17
 github.com/moloch--/memmod
-# github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e
-## explicit; go 1.12
 # github.com/nxadm/tail v1.4.8
 ## explicit; go 1.13
 github.com/nxadm/tail
@@ -412,7 +402,7 @@ github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.5
 ## explicit; go 1.12
 github.com/spf13/pflag
-# github.com/stretchr/testify v1.8.0
+# github.com/stretchr/testify v1.8.1
 ## explicit; go 1.13
 github.com/stretchr/testify/assert
 # github.com/thedevsaddam/gojsonq/v2 v2.5.2
@@ -429,7 +419,7 @@ github.com/yiya1989/sshkrb5/krb5forssh
 # github.com/yusufpapurcu/wmi v1.2.2
 ## explicit; go 1.16
 github.com/yusufpapurcu/wmi
-# golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90
+# golang.org/x/crypto v0.6.0
 ## explicit; go 1.17
 golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert
@@ -460,10 +450,10 @@ golang.org/x/crypto/ssh
 golang.org/x/crypto/ssh/agent
 golang.org/x/crypto/ssh/internal/bcrypt_pbkdf
 golang.org/x/crypto/ssh/terminal
-# golang.org/x/mod v0.5.1
+# golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
 ## explicit; go 1.17
 golang.org/x/mod/semver
-# golang.org/x/net v0.0.0-20220722155237-a158d28d115b
+# golang.org/x/net v0.6.0
 ## explicit; go 1.17
 golang.org/x/net/bpf
 golang.org/x/net/dns/dnsmessage
@@ -480,7 +470,7 @@ golang.org/x/net/internal/timeseries
 golang.org/x/net/ipv4
 golang.org/x/net/ipv6
 golang.org/x/net/trace
-# golang.org/x/sys v0.0.0-20220928140112-f11e5e49a4ec
+# golang.org/x/sys v0.5.0
 ## explicit; go 1.17
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
@@ -491,10 +481,10 @@ golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
 golang.org/x/sys/windows/svc
 golang.org/x/sys/windows/svc/mgr
-# golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
+# golang.org/x/term v0.5.0
 ## explicit; go 1.17
 golang.org/x/term
-# golang.org/x/text v0.3.7
+# golang.org/x/text v0.7.0
 ## explicit; go 1.17
 golang.org/x/text/cases
 golang.org/x/text/encoding
@@ -523,11 +513,12 @@ golang.org/x/text/width
 # golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
 ## explicit
 golang.org/x/time/rate
-# golang.org/x/tools v0.1.9
-## explicit; go 1.17
+# golang.org/x/tools v0.1.12
+## explicit; go 1.18
 golang.org/x/tools/go/gcexportdata
 golang.org/x/tools/go/internal/gcimporter
 golang.org/x/tools/go/internal/packagesdriver
+golang.org/x/tools/go/internal/pkgbits
 golang.org/x/tools/go/packages
 golang.org/x/tools/internal/event
 golang.org/x/tools/internal/event/core
@@ -537,10 +528,6 @@ golang.org/x/tools/internal/gocommand
 golang.org/x/tools/internal/packagesinternal
 golang.org/x/tools/internal/typeparams
 golang.org/x/tools/internal/typesinternal
-# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
-## explicit; go 1.11
-golang.org/x/xerrors
-golang.org/x/xerrors/internal
 # golang.zx2c4.com/wintun v0.0.0-20211104114900-415007cec224
 ## explicit; go 1.17
 golang.zx2c4.com/wintun
@@ -649,8 +636,6 @@ google.golang.org/protobuf/types/known/timestamppb
 gopkg.in/AlecAivazis/survey.v1
 gopkg.in/AlecAivazis/survey.v1/core
 gopkg.in/AlecAivazis/survey.v1/terminal
-# gopkg.in/check.v1 v1.0.0-20200902074654-038fdea0a05b
-## explicit
 # gopkg.in/jcmturner/aescts.v1 v1.0.1
 ## explicit
 gopkg.in/jcmturner/aescts.v1
@@ -707,13 +692,13 @@ gopkg.in/yaml.v3
 # gorm.io/driver/mysql v1.3.6
 ## explicit; go 1.14
 gorm.io/driver/mysql
-# gorm.io/driver/postgres v1.3.10
+# gorm.io/driver/postgres v1.4.8
 ## explicit; go 1.14
 gorm.io/driver/postgres
 # gorm.io/driver/sqlite v1.3.6
 ## explicit; go 1.14
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.23.10
+# gorm.io/gorm v1.24.2
 ## explicit; go 1.16
 gorm.io/gorm
 gorm.io/gorm/callbacks
